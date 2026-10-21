@@ -97,6 +97,27 @@ scripts/
 - **图例滑块**：按到相机距离只显示最近 N 个节点名称，防止文字重叠
 - **▶ 漫游**（约 78 秒）：相机沿中轴线自下而上，视线俯视当前层；知识点按年级逐个弹入（放大 2.5 倍 + 闪白后回落）；先修连线「生长式」爬向目标，抵达瞬间目标恰好显现；按 `Esc` 或点击画面退出
 
+## 在线访问 & 仓库
+
+| 平台 | 地址 |
+|---|---|
+| GitHub Pages（已上线） | https://yangliufeng-1.github.io/knowledge-tower-3d/ |
+| 源码仓库 · GitHub | https://github.com/yangliufeng-1/knowledge-tower-3d |
+| 源码仓库 · Gitee | https://gitee.com/yangliufeng1/knowledge-tower-3d |
+| Workbuddy 托管 | https://knowledge-tower-3d.app.workbuddy.host/ |
+
+### Gitee Pages 开启步骤（需手动一次）
+
+Gitee 的 Pages 服务没有开放部署 API，需在网页端启动一次：
+
+1. 打开 https://gitee.com/yangliufeng1/knowledge-tower-3d
+2. 进入 **服务 → Gitee Pages**
+3. 部署分支选 `gh-pages`，部署目录留空（根目录），勾选后点击「启动」
+4. 启动后访问 https://yangliufeng1.gitee.io/knowledge-tower-3d/
+
+> 未实名认证的账号无法使用 Gitee Pages；若无法启动，可直接用上面的 GitHub Pages 链接。
+> 每次更新产物后，回到该页面点「更新」重新部署。
+
 ## 数据来源与许可
 
 - 知识点数据（470 项、456 条先修关系）来自策展式教育索引，**定位为学习路径参考，而非权威教学大纲**

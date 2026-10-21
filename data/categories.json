@@ -1,0 +1,82 @@
+[
+  {
+    "id": "chinese",
+    "nameZh": "语文",
+    "nameEn": "Chinese",
+    "color": "#E35D6A",
+    "shape": "auto",
+    "order": 0
+  },
+  {
+    "id": "math",
+    "nameZh": "数学",
+    "nameEn": "Mathematics",
+    "color": "#4C8FE0",
+    "shape": "auto",
+    "order": 1
+  },
+  {
+    "id": "english",
+    "nameZh": "英语",
+    "nameEn": "English",
+    "color": "#9B6DD6",
+    "shape": "auto",
+    "order": 2
+  },
+  {
+    "id": "physics",
+    "nameZh": "物理",
+    "nameEn": "Physics",
+    "color": "#29A8A0",
+    "shape": "auto",
+    "order": 3
+  },
+  {
+    "id": "chemistry",
+    "nameZh": "化学",
+    "nameEn": "Chemistry",
+    "color": "#E9A33C",
+    "shape": "auto",
+    "order": 4
+  },
+  {
+    "id": "biology",
+    "nameZh": "生物",
+    "nameEn": "Biology",
+    "color": "#63C062",
+    "shape": "auto",
+    "order": 5
+  },
+  {
+    "id": "history",
+    "nameZh": "历史",
+    "nameEn": "History",
+    "color": "#C08552",
+    "shape": "auto",
+    "order": 6
+  },
+  {
+    "id": "geography",
+    "nameZh": "地理",
+    "nameEn": "Geography",
+    "color": "#D8C13F",
+    "shape": "auto",
+    "order": 7
+  },
+  {
+    "id": "politics",
+    "nameZh": "道法·政治",
+    "nameEn": "Politics",
+    "color": "#D9719E",
+    "shape": "auto",
+    "order": 8
+  },
+  {
+    "id": "science",
+    "nameZh": "科学",
+    "nameEn": "Science",
+    "color": "#7E93A8",
+    "shape": "auto",
+    "order": 9
+  }
+]

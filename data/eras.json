@@ -1,0 +1,42 @@
+[
+  {
+    "id": "L1",
+    "nameZh": "启蒙层",
+    "nameEn": "Foundation I",
+    "subtitle": "小学 1-2 年级",
+    "yearStart": 1,
+    "yearEnd": 3,
+    "order": 1,
+    "axisLabel": "年级"
+  },
+  {
+    "id": "L2",
+    "nameZh": "基础层",
+    "nameEn": "Foundation II",
+    "subtitle": "小学 3-6 年级",
+    "yearStart": 3,
+    "yearEnd": 7,
+    "order": 2,
+    "axisLabel": "年级"
+  },
+  {
+    "id": "L3",
+    "nameZh": "进阶层",
+    "nameEn": "Intermediate",
+    "subtitle": "初中 7-9 年级",
+    "yearStart": 7,
+    "yearEnd": 10,
+    "order": 3,
+    "axisLabel": "年级"
+  },
+  {
+    "id": "L4",
+    "nameZh": "高阶层",
+    "nameEn": "Advanced",
+    "subtitle": "高中 10-12 年级",
+    "yearStart": 10,
+    "yearEnd": 13,
+    "order": 4,
+    "axisLabel": "年级"
+  }
+]

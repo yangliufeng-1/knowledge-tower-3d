@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>知识点之塔 · 3D 先修知识树</title>
+<meta name="description" content="把 K12 知识点做成一座可以旋转的 3D 知识之塔：高度是认知层次，角度是学科，面数是重要度，连线是先修关系。" />
+<meta name="theme-color" content="#0a0e16" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0e16'/%3E%3Cpolygon points='16,5 27,11 27,21 16,27 5,21 5,11' fill='none' stroke='%236aa8f0' stroke-width='2'/%3E%3C/svg%3E" />
+</head>
+<body>
+<canvas id="stage"></canvas>
+<div id="labels"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <polygon points="16,3 28,10 28,22 16,29 4,22 4,10" fill="none" stroke="#6aa8f0" stroke-width="1.5" />
+      <polygon points="16,10 22,13.5 22,19.5 16,23 10,19.5 10,13.5" fill="#6aa8f0" opacity=".5" />
+    </svg>
+    <div class="brand-text">
+      <b>知识点之塔</b>
+      <span>KNOWLEDGE PREREQUISITE TOWER</span>
+    </div>
+  </div>
+
+  <div class="search-wrap">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" />
+    </svg>
+    <input id="searchInput" type="search" placeholder="搜索知识点，如「一元二次方程」「光合作用」…" autocomplete="off" aria-label="搜索知识点" />
+    <kbd>/</kbd>
+    <div id="searchResults"></div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="actions">
+    <button id="btnTour" class="btn primary">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+      漫游
+    </button>
+    <button id="btnReset" class="btn">重置</button>
+  </div>
+</header>
+
+<aside class="legend">
+  <div class="legend-head">
+    <span>学科扇区</span>
+    <button id="legendAll">反选</button>
+  </div>
+  <div class="legend-list" id="legendList"></div>
+  <div class="legend-foot">
+    <label for="labelCount">显示名称 <b id="labelCountVal">150</b></label>
+    <input id="labelCount" type="range" min="0" max="480" value="150" step="10" />
+  </div>
+</aside>
+
+<aside class="channels">
+  <h4>视觉通道 → 数据</h4>
+  <div><span>高度</span><span>认知层次（简单 → 复杂）</span></div>
+  <div><span>角度</span><span>学科扇区（按数量占比）</span></div>
+  <div><span>面数</span><span>重要度 20/12/8/6/4</span></div>
+  <div><span>连线</span><span>先修关系</span></div>
+</aside>
+
+<div id="tooltip"></div>
+<div id="card"></div>
+<div class="hint">拖拽旋转 · 滚轮缩放 · 右键平移 · 悬停看先修链 · 点击看详情 · Esc 退出</div>
+<div id="tourBar"><div id="tourFill"></div></div>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
